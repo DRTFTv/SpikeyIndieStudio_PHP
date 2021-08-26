@@ -1,0 +1,80 @@
+.star {
+    /*size - position*/
+    position: fixed;
+    z-index: -1;
+
+    /*style*/
+    background: transparent;
+    border-radius: 50%;
+
+    /*grid*/
+}
+
+.particle-1-1 {
+    /*size - position*/
+    width: 0.01vw;
+    height: 0.01vw;
+
+    /*style*/
+    animation: starAnimation 30s linear infinite;
+
+    /*grid*/
+}
+
+.particle-1-2 {
+    /*size - position*/
+    width: 0.01vw;
+    height: 0.01vw;
+    top: 0px;
+
+    /*style*/
+    animation: starAnimation 30s linear infinite;
+
+    /*grid*/
+}
+
+.particle-2-1 {
+    /*size - position*/
+    width: 0.05vw;
+    height: 0.05vw;
+
+    /*style*/
+    animation: starAnimation 25s linear infinite;
+
+    /*grid*/
+}
+
+.particle-2-2 {
+    /*size - position*/
+    width: 0.05vw;
+    height: 0.05vw;
+    top: 0px;
+
+    /*style*/
+    animation: starAnimation 25s linear infinite;
+
+    /*grid*/
+}
+
+.particle-3-1 {
+    /*size - position*/
+    width: 0.1vw;
+    height: 0.1vw;
+
+    /*style*/
+    animation: starAnimation 20s linear infinite;
+
+    /*grid*/
+}
+
+.particle-3-2 {
+    /*size - position*/
+    width: 0.1vw;
+    height: 0.1vw;
+    top: 0px;
+
+    /*style*/
+    animation: starAnimation 20s linear infinite;
+
+    /*grid*/
+}

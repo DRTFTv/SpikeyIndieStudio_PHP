@@ -1,0 +1,275 @@
+.content {
+    /*size - position*/
+    width: 100vw;
+    height: 100vh;
+    margin-top: 100vh;
+    z-index: 1;
+
+    /*style*/
+    text-align: center;
+    backdrop-filter: invert(100%);
+
+    /*grid*/
+
+}
+
+.contentGames,
+.contentCulture,
+.contentPartners,
+.contentTeam {
+    /*size - position*/
+    width: 75vw;
+    height: 0vh;
+    position: fixed;
+    top: 25vh;
+    left: 25vw;
+    margin-top: -12.5vh;
+    margin-left: -12.5vw;
+    z-index: 5;
+
+    /*style*/
+    transition: 0.5s;
+    opacity: 0;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    background-color: rgba(127, 127, 127, 0.1);
+    overflow: auto;
+    border-radius: 0vh;
+
+    /*grid*/
+    display: block;
+}
+
+.contentTitle {
+    /*size - position*/
+    height: 3vh;
+    margin-left: auto;
+
+    /*style*/
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom-right-radius: 2.5vh;
+    border-bottom-left-radius: 2.5vh;
+
+    /*grid*/
+}
+
+.contentTitle p {
+    /*size - position*/
+
+    /*style*/
+    line-height: 1.5;
+
+    /*grid*/
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.grid {
+    /*size - position*/
+
+    /*style*/
+
+    /*grid*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    /*size - position*/
+    width: 25vh;
+    height: 25vh;
+    margin: 2vh;
+
+    /*style*/
+    transition: 0.75s;
+    background-color: white;
+    border-radius: 2.5vh;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+
+    /*grid*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 0 1 auto;
+    overflow: auto;
+}
+
+.card:hover {
+    /*size - position*/
+    width: 25vh;
+    height: 50vh;
+
+    /*style*/
+    transition: 0.75s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
+
+    /*grid*/
+}
+
+.cardContentImg {
+    /*size - position*/
+    width: 100%;
+    height: 7em;
+    margin-bottom: 1vh;
+
+    /*style*/
+
+    /*grid*/
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-start;
+}
+
+.cardImg {
+    /*size - position*/
+    width: 100%;
+    height: fit-content;
+
+    /*style*/
+
+    /*grid*/
+}
+
+.cardText {
+    /*size - position*/
+    width: 100%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+
+    /*style*/
+
+    /*grid*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;   
+}
+
+.cardText h2 {
+    /*size - position*/
+
+    /*style*/
+    color: rgb(255, 127, 0);
+    text-transform: uppercase;
+
+    /*grid*/
+    flex-basis: 100%;
+}
+
+.cardText p {
+    /*size - position*/
+    margin-top: 1vh;
+
+    /*style*/
+    color: grey;
+
+    /*grid*/
+    flex-basis: 100%;
+}
+
+.cardText a {
+    /*size - position*/
+    width: fit-content;
+    height: 2vh;
+    margin: 0.25vh;
+    margin-top: 1vh;
+    padding: 0.5vh 0.75vh;
+
+    /*style*/
+    color: white;
+    background-color: grey;
+    border-radius: 2.5vh;
+    text-decoration: none;
+
+    /*grid*/
+}
+
+.cardLink {
+    /*size - position*/
+    width: 100%;
+    margin-bottom: 1vh;
+
+    /*style*/
+
+    /*grid*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardLink h4 {
+    /*size - position*/
+
+    /*style*/
+    color: gray;
+    text-transform: uppercase;
+
+    /*grid*/
+    flex-basis: 100%;
+}
+
+.cardLink a {
+    /*size - position*/
+    width: fit-content;
+    height: 2vh;
+    margin: 0.25vh;
+    padding: 0.5vh 0.75vh;
+
+    /*style*/
+    color: white;
+    background-color: grey;
+    border-radius: 2.5vh;
+    text-decoration: none;
+
+    /*grid*/
+}
+
+.card form {
+    /*size - position*/
+    width: 100%;
+    height: 5vh;
+    align-self: flex-end;
+
+    /*style*/
+
+    /*grid*/
+}
+
+.cardButton {
+    /*size - position*/
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+
+    /*style*/
+    transition: 0.5s;
+    background-color: rgb(255, 127, 0);
+    color: white;
+    cursor: pointer;
+    font-size: 2vh;
+    border: 0.25vh solid rgb(255, 127, 0);
+    border-bottom-right-radius: 2.5vh;
+    border-bottom-left-radius: 2.5vh;
+
+    /*grid*/
+}
+
+.cardButton:hover {
+    /*size - position*/
+    
+    /*style*/
+    color: rgb(255, 127, 0);
+    background-color: white;
+
+    /*grid*/
+}

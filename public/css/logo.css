@@ -1,0 +1,77 @@
+.logoArt {
+    /*size - position*/
+    width: 30vh;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    margin-top: -15vh;
+    margin-left: -15vh;
+    z-index: 3;
+
+    /*style*/
+
+    /*grid*/
+}
+
+.logoAnimation {
+    /*size - position*/
+    width: 30vh;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    margin-top: -15vh;
+    margin-left: -15vh;
+    z-index: 3;
+
+    /*style*/
+
+    /*grid*/
+    display: none;
+}
+
+.logoAnimation svg {
+    /*size - position*/
+
+    /*style*/
+    fill: none;
+    stroke: white;
+    stroke-width: 10px;
+    stroke-dasharray: 1000;
+    stroke-linecap: round;
+    animation: logoAnimation 100s linear alternate-reverse infinite;
+
+    /*grid*/
+}
+
+.logoCircle {
+    /*size - position*/
+    width: 24.3vh;
+    height: 24.3vh;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    margin-top: -12.45vh;
+    margin-left: -12.15vh;
+    z-index: 2;
+
+    /*style*/
+    backdrop-filter: invert(100%);
+    border-radius: 50%;
+
+    /*grid*/
+}
+
+
+.logoName {
+    /*size - position*/
+    width: 24.3vh;
+    position: absolute;
+    top: 65vh;
+    left: 50vw;
+    margin-left: -12.45vh;
+
+    /*style*/
+    opacity: 0;
+
+    /*grid*/
+}

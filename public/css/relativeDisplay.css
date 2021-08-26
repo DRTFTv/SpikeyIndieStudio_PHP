@@ -1,0 +1,31 @@
+@media (min-width: 1025px) {
+    .contentBtn {
+        /*size - position*/
+        position: absolute;
+        display: flex;
+        top: 1vh;
+        left: 50vw;
+
+        /*style*/
+        transform: translateX(-50%);
+
+        /*grid*/
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1025px) {
+    .contentBtn {
+        /*size - position*/
+        position: absolute;
+        display: flex;
+        bottom: 1vh;
+        left: 50vw;
+
+        /*style*/
+        transform: translateX(-50%);
+
+        /*grid*/
+        justify-content: center;
+    }
+}

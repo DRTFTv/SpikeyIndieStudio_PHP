@@ -1,0 +1,48 @@
+@keyframes starAnimation {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-100vh);
+    }
+}
+
+@keyframes logoAnimation {
+    from {
+        stroke-dashoffset: 0;
+    }
+
+    to {
+        stroke-dashoffset: 100000;
+    }
+}
+
+.contentGeneralAnimation {
+    /*size - position*/
+    height: 75vh;
+
+    /*style*/
+    transition: 0.5s;
+    opacity: 1;
+    border-radius: 2.5vh;
+    
+    /*grid*/
+}
+
+.showAnimation {
+    transition: 0.5s;
+    animation: showAnimation forwards 0.5s;
+}
+
+@keyframes showAnimation {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 5vh, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}

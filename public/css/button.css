@@ -1,0 +1,60 @@
+.contentBtn button {
+    /*size - position*/
+    padding: 0.5vh 0.75vh;
+    float: left;
+
+    /*style*/
+    transition: 0.5s;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 2vh;
+    border: 0.25vh solid white;
+
+    /*grid*/
+}
+
+.contentBtn button:hover {
+    /*size - position*/
+
+    /*style*/
+    color: black;
+    background-color: white;
+
+    /*grid*/
+}
+
+.gamesBtn {
+    /*size - position*/
+
+    /*style*/
+    opacity: 0;
+    border-left-width: 0.125vh;
+    border-top-left-radius: 1vh;
+    border-bottom-left-radius: 1vh;
+
+    /*grid*/
+}
+
+.cultureBtn,
+.partnersBtn {
+    /*size - position*/
+    
+    /*style*/
+    opacity: 0;
+    border-left-width: 0.125vh;
+
+    /*grid*/
+}
+
+.teamBtn {
+    /*size - position*/
+
+    /*style*/
+    opacity: 0;
+    border-left-width: 0.125vh;
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+
+    /*grid*/
+}
