@@ -16,8 +16,8 @@ class ImageModel extends Model
 	protected $protectFields        = true;
 	protected $allowedFields        = [];
 
-	public function imageGame($id = null){
-		return $this->where('game_id', $id)->first();
+	public function imageProject($id = null){
+		return $this->where('project_id', $id)->first();
 	}
 
 	public function imagePartners($id = null){

@@ -91,7 +91,7 @@
 
     <div class="content" id="content">
         <div class="contentBtn" id="contentBtn">
-            <button class="gamesBtn btn" id="gamesBtn" onclick="ShowContent(this.id)">GAMES</button>
+            <button class="projectsBtn btn" id="projectsBtn" onclick="ShowContent(this.id)">PROJECTS</button>
             <button class="cultureBtn btn" id="cultureBtn" onclick="ShowContent(this.id)">CULTURE</button>
             <button class="partnersBtn btn" id="partnersBtn" onclick="ShowContent(this.id)">PARTNERS</button>
             <button class="teamBtn btn" id="teamBtn" onclick="ShowContent(this.id)">TEAM</button>
@@ -143,24 +143,24 @@
     </div>
 
     <div class="contentGeneral" id="contentGeneral">
-        <div class="contentGames" id="contentGames">
+        <div class="contentProjects" id="contentProjects">
             <div class="contentTitle">
-                <p>G A M E S</p>
+                <p>P R O J E C T S</p>
             </div>
             <div class="grid">
-                <?php foreach($game_tb as $game): ?>
+                <?php foreach($project_tb as $project): ?>
                 <div class="card">
                     <div class="cardContentImg">
-                        <img class="cardImg pic" src="<?php echo $imageGame($game['game_cd'])['image_ds'] ?>">
+                        <img class="cardImg pic" src="<?php echo $imageProject($project['project_cd'])['image_ds'] ?>">
                     </div>
                     <div class="cardText">
-                        <h2><?php echo $game['game_nm'] ?></h2>
-                        <p><?php echo $game['game_ds'] ?></p>
-                        <?php foreach($tagGame($game['game_cd']) as $tagGames): ?>
-                        <a><?php echo $tagGames['tag_nm'] ?></a>
+                        <h2><?php echo $project['project_nm'] ?></h2>
+                        <p><?php echo $project['project_ds'] ?></p>
+                        <?php foreach($tagProject($project['project_cd']) as $tagProjects): ?>
+                        <a><?php echo $tagProjects['tag_nm'] ?></a>
                         <?php endforeach; ?>
                     </div>
-                    <form action="<?php echo $game['gameLink_ds'] ?>" target="_blank">
+                    <form action="<?php echo $project['projectLink_ds'] ?>" target="_blank">
                         <button class="cardButton">SITE</button>
                     </form>
                 </div>

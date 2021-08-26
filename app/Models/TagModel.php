@@ -20,13 +20,13 @@ class TagModel extends Model
 		return $this->findAll();
 	}
 
-	public function gameTag($id){
+	public function projectTag($id){
 		$db = db_connect();
 		$builder = $db->table('tag_tb');
 		$builder->distinct()
 				->select('g.*')
-				->from('game_tb AS g')
-				->join('game_tag_tb AS gt', 'gt.game_id = g.game_cd')
+				->from('project_tb AS g')
+				->join('project_tag_tb AS gt', 'gt.project_id = g.project_cd')
 				->join('tag_tb AS t', 'gt.tag_id = t.tag_cd')
 				->where('t.tag_cd', $id);
 		$query = $builder->get();

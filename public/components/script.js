@@ -80,7 +80,7 @@ function Show() {
     let v = parseInt(100 * d.scrollTop / (d.scrollHeight - d.clientHeight));
 
     let lg = document.getElementById("logoAnimation");
-    let gb = document.getElementById("gamesBtn");
+    let gb = document.getElementById("projectsBtn");
     let cb = document.getElementById("cultureBtn");
     let pb = document.getElementById("partnersBtn");
     let tb = document.getElementById("teamBtn");
@@ -105,13 +105,13 @@ function Show() {
 }
 
 function ShowContent(btnId) {
-    let cg = document.getElementById("contentGames");
+    let cg = document.getElementById("contentProjects");
     let cb = document.getElementById("contentCulture");
     let cp = document.getElementById("contentPartners");
     let ct = document.getElementById("contentTeam");
 
     switch (btnId) {
-        case "gamesBtn":
+        case "projectsBtn":
             cg.classList.toggle("contentGeneralAnimation");
             cb.classList.remove("contentGeneralAnimation");
             cp.classList.remove("contentGeneralAnimation");

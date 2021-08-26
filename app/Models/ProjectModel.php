@@ -5,11 +5,11 @@ namespace App\Models;
 use CodeIgniter\Database\MySQLi\Builder;
 use CodeIgniter\Model;
 
-class GameModel extends Model
+class ProjectModel extends Model
 {
 	protected $DBGroup              = 'default';
-	protected $table                = 'game_tb';
-	protected $primaryKey           = 'game_cd';
+	protected $table                = 'project_tb';
+	protected $primaryKey           = 'project_cd';
 	protected $useAutoIncrement     = true;
 	protected $insertID             = 0;
 	protected $returnType           = 'array';
@@ -17,19 +17,19 @@ class GameModel extends Model
 	protected $protectFields        = true;
 	protected $allowedFields        = [];
 
-	public function game(){
+	public function project(){
 		return $this->findAll();
 	}
 
-	public function tagGame($id){
+	public function tagProject($id){
 		$db = db_connect();
-		$builder = $db->table('game_tb');
+		$builder = $db->table('project_tb');
 		$builder->distinct()
 				->select('t.*')
 				->from('tag_tb AS t')
-				->join('game_tag_tb AS gt', 'gt.tag_id = t.tag_cd')
-				->join('game_tb AS g', 'gt.game_id = g.game_cd')
-				->where('g.game_cd', $id);
+				->join('project_tag_tb AS gt', 'gt.tag_id = t.tag_cd')
+				->join('project_tb AS g', 'gt.project_id = g.project_cd')
+				->where('g.project_cd', $id);
 		$query = $builder->get();
 		return $query->getResultArray();
 	}

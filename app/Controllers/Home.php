@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Models\GameModel;
+use App\Models\ProjectModel;
 use App\Models\ImageModel;
 use App\Models\MemberModel;
 use App\Models\OfficeModel;
@@ -12,7 +12,7 @@ use App\Models\TagModel;
 
 class Home extends BaseController
 {
-	private $gameModel;
+	private $projectModel;
 	private $imageModel;
 	private $memberModel;
 	private $officeModel;
@@ -23,7 +23,7 @@ class Home extends BaseController
 
 	public function __construct()
 	{
-		$this->gameModel = new GameModel();
+		$this->projectModel = new ProjectModel();
 		$this->imageModel = new ImageModel();
 		$this->memberModel = new MemberModel();
 		$this->officeModel = new OfficeModel();
@@ -35,15 +35,15 @@ class Home extends BaseController
 	public function index()
 	{
 		return view('index', [
-			//Game
-			'game_tb' => $this->gameModel->game(),
+			//Project
+			'project_tb' => $this->projectModel->project(),
 
-			'imageGame' => function($id) {
-				return $this->imageModel->imageGame($id);
+			'imageProject' => function($id) {
+				return $this->imageModel->imageProject($id);
 			},
 
-			'tagGame' => function($id) {
-				return $this->gameModel->tagGame($id);
+			'tagProject' => function($id) {
+				return $this->projectModel->tagProject($id);
 			},
 
 			//Partners
@@ -67,8 +67,8 @@ class Home extends BaseController
 			//Tag
 			'tag_tb' => $this->tagModel->tag(),
 
-			'gameTag' => function($id) {
-				return $this->tagModel->gameTag($id);
+			'projectTag' => function($id) {
+				return $this->tagModel->projectTag($id);
 			},
 
 			//Office
