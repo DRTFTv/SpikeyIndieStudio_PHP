@@ -51,7 +51,7 @@ navigator.saysWho = (() => {
     }
 
     return match.join('-')
-})()
+})();
 
 function Galaxy() {
     for (let x = 1; x <= 3; x++) {
