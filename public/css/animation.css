@@ -1,6 +1,6 @@
 @keyframes starAnimation {
     from {
-        transform: translateY(0px);
+        transform: translateY(0);
     }
 
     to {

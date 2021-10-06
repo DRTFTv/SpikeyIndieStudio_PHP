@@ -25,7 +25,7 @@
     /*size - position*/
     width: 0.01vw;
     height: 0.01vw;
-    top: 0px;
+    top: 0;
 
     /*style*/
     animation: starAnimation 30s linear infinite;
@@ -48,7 +48,7 @@
     /*size - position*/
     width: 0.05vw;
     height: 0.05vw;
-    top: 0px;
+    top: 0;
 
     /*style*/
     animation: starAnimation 25s linear infinite;
@@ -71,7 +71,7 @@
     /*size - position*/
     width: 0.1vw;
     height: 0.1vw;
-    top: 0px;
+    top: 0;
 
     /*style*/
     animation: starAnimation 20s linear infinite;
