@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/png" href="<?= base_url()?>/favicon.png" />
     <title>Spikey Indie Studio</title>
 
-    <link rel="stylesheet" href="css/universal.css">
-    <link rel="stylesheet" href="css/backgroundStar.css">
-    <link rel="stylesheet" href="css/logo.css">
-    <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/content.css">
-    <link rel="stylesheet" href="css/animation.css">
-    <link rel="stylesheet" href="css/relativeDisplay.css">
+    <link rel="stylesheet" href="<?= base_url()?>/css/universal.css">
+    <link rel="stylesheet" href="<?= base_url()?>/css/backgroundStar.css">
+    <link rel="stylesheet" href="<?= base_url()?>/css/logo.css">
+    <link rel="stylesheet" href="<?= base_url()?>/css/button.css">
+    <link rel="stylesheet" href="<?= base_url()?>/css/content.css">
+    <link rel="stylesheet" href="<?= base_url()?>/css/animation.css">
+    <link rel="stylesheet" href="<?= base_url()?>/css/relativeDisplay.css">
 
 </head>
 
@@ -252,7 +252,7 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="components/main.js"></script>
+    <script type="text/javascript" src="<?= base_url()?>/components/main.js"></script>
     
     <!---
                       #######  ##       ########
