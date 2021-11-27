@@ -8,6 +8,6 @@ class Event extends BaseController
 {
 	public function index()
 	{
-		return view('event');
+		return redirect()->to('/');
 	}
 }
