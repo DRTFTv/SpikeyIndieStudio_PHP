@@ -151,16 +151,16 @@
                 <?php foreach($project_tb as $project): ?>
                 <div class="card">
                     <div class="cardContentImg">
-                        <img class="cardImg pic" src="<?php echo $imageProject($project['project_cd'])['image_ds'] ?>">
+                        <img class="cardImg pic" src="<?= $imageProject($project['project_cd'])['image_ds'] ?>">
                     </div>
                     <div class="cardText">
-                        <h2><?php echo $project['project_nm'] ?></h2>
-                        <p><?php echo $project['project_ds'] ?></p>
+                        <h2><?= $project['project_nm'] ?></h2>
+                        <p><?= $project['project_ds'] ?></p>
                         <?php foreach($tagProject($project['project_cd']) as $tagProjects): ?>
-                        <a><?php echo $tagProjects['tag_nm'] ?></a>
+                        <a><?= $tagProjects['tag_nm'] ?></a>
                         <?php endforeach; ?>
                     </div>
-                    <form action="<?php echo $project['projectLink_ds'] ?>" target="_blank">
+                    <form action="<?= $project['projectLink_ds'] ?>" target="_blank">
                         <button class="cardButton">SITE</button>
                     </form>
                 </div>
@@ -172,8 +172,10 @@
             <div class="contentTitle">
                 <p>C U L T U R E</p>
             </div>
-            <div class="grid">
-                <div class="card">a</div>
+            <div class="gridCulture">
+                <div class="cardCulture">
+                    a
+                </div>
             </div>
         </div>
 
@@ -185,15 +187,15 @@
                 <?php foreach($partners_tb as $partners): ?>
                 <div class="card">
                     <div class="cardContentImg">
-                        <img class="cardImg" src="<?php echo $imagePartners($partners['partners_cd'])['image_ds']?>">
+                        <img class="cardImg" src="<?= $imagePartners($partners['partners_cd'])['image_ds']?>">
                     </div>
                     <div class="cardText">
-                        <h2><?php echo $partners['partners_nm'] ?></h2>
+                        <h2><?= $partners['partners_nm'] ?></h2>
                         <p>PARTNERS SINCE:</p>
-                        <p><?php echo date('d/m/Y', strtotime($partners['partnersSince_dt'])) ?></p>
-                        <p><?php echo $partners['partners_ds'] ?></p>
+                        <p><?= date('d/m/Y', strtotime($partners['partnersSince_dt'])) ?></p>
+                        <p><?= $partners['partners_ds'] ?></p>
                     </div>
-                    <form action="<?php echo $partners['partnersLink_ds'] ?>" target="_blank">
+                    <form action="<?= $partners['partnersLink_ds'] ?>" target="_blank">
                         <button class="cardButton">SITE</button>
                     </form>
                 </div>
@@ -209,14 +211,14 @@
                 <?php foreach($member_tb as $member): ?>
                 <div class="card">
                     <div class="cardContentImg">
-                        <img class="cardImg" src="<?php echo $imageMember($member['member_cd'])['image_ds'] ?>">
+                        <img class="cardImg" src="<?= $imageMember($member['member_cd'])['image_ds'] ?>">
                     </div>
                     <div class="cardText">
-                        <h2><?php echo $member['member_nm'] ?></h2>
-                        <p><?php echo $member['member_ds'] ?></p>
+                        <h2><?= $member['member_nm'] ?></h2>
+                        <p><?= $member['member_ds'] ?></p>
                         <?php foreach($officeMember($member['member_cd']) as $officeMembers): ?>
                         <a
-                            style="background-color:<?php echo $officeMembers['officeColor_ds'] ?>"><?php echo $officeMembers['office_nm'] ?></a>
+                            style="background-color:<?= $officeMembers['officeColor_ds'] ?>"><?= $officeMembers['office_nm'] ?></a>
                         <?php endforeach; ?>
                     </div>
                     <div class="cardLink">
@@ -225,14 +227,14 @@
                         <?php foreach($socialmedianame as $socialmedianames): ?>
                         <?php foreach($socialmedialink_tb($member['member_cd']) as $socialmedialink): ?>
                         <?php if(!empty($socialmedialink[$socialmedianames])): ?>
-                        <a href='<?php echo $socialmedialink[$socialmedianames] ?>'
+                        <a href='<?= $socialmedialink[$socialmedianames] ?>'
                             target="_blank"><?php $str = $socialmedianames; $l = strpos($str, "k"); echo substr($str, $l + 1, -3); ?></a>
                         <?php endif; ?>
                         <?php endforeach; ?>
                         <?php endforeach; ?>
 
                     </div>
-                    <form action="<?php echo $member['memberLink_ds'] ?>" target="_blank">
+                    <form action="<?= base_url()?>\<?= $member['memberLink_ds'] ?>" target="_blank">
                         <button class="cardButton">SITE</button>
                     </form>
                 </div>
