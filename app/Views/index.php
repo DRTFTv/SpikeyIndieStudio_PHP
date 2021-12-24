@@ -234,7 +234,7 @@
                         <?php endforeach; ?>
 
                     </div>
-                    <form action="<?= base_url()?>\<?= $member['memberLink_ds'] ?>" target="_blank">
+                    <form action="<?= base_url()?>/<?= $member['memberLink_ds'] ?>" target="_blank">
                         <button class="cardButton">SITE</button>
                     </form>
                 </div>
