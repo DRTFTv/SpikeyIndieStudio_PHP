@@ -62,6 +62,7 @@ CREATE TABLE socialMediaLink_tb (
 	socialMediaLink_cd INT AUTO_INCREMENT NOT NULL,
 	socialMediaLinkBehance_ds VARCHAR(250),
     socialMediaLinkGameJolt_ds VARCHAR(250),
+    socialMediaLinkItchIo_ds VARCHAR(250),
     socialMediaLinkGitHub_ds VARCHAR(250),
     socialMediaLinkInstagram_ds VARCHAR(250),
     socialMediaLinkSoundCloud_ds VARCHAR(250),
