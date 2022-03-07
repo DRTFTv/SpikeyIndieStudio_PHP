@@ -211,7 +211,7 @@
                 <?php foreach($member_tb as $member): ?>
                 <div class="card">
                     <div class="cardContentImg">
-                        <img class="cardImg" src="<?= $imageMember($member['member_cd'])['image_ds'] ?>">
+                        <img class="cardImg" src="https://avatars.githubusercontent.com/<?= $imageMember($member['member_cd'])['image_ds'] ?>">
                     </div>
                     <div class="cardText">
                         <h2><?= $member['member_nm'] ?></h2>
